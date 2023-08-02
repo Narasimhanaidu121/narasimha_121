@@ -1,0 +1,268 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Kross - Creative Portfolio Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Creative Portfolio Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Kross Template v1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}" />
+
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="{%  static 'plugins/themify-icons/themify-icons.css' %}">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="{% static 'images/logo.png' %}" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="col-md-6 mx-auto">
+      <ul class="list-unstyled menu">
+        <li class="active"><a href="{% url 'Mypro:index3' %}">Home</a></li>
+        <li><a href="{% url 'Mypro:rooms'%}">Rooms</a></li>
+        <li><a href="{% url 'Mypro:about1'%}">About</a></li>
+        <li><a href="{% url 'Mypro:events'%}">Events</a></li>
+        <li><a href="{% url 'Mypro:contact1'%}">Contact</a></li>
+        <li><a href="{% url 'Mypro:reservation1'%}">Reservation</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<section class="page-title-alt bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary">About Me</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="{% static 'images/illustrations/leaf-bg-top.png' %}" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{% static 'images/illustrations/dots-group-sm.png' %}" alt="illustrations" class="bg-shape-2">
+  <img src="{% static 'images/illustrations/leaf-yellow.png' %}" alt="illustrations" class="bg-shape-3">
+  <img src="{% static 'images/illustrations/leaf-orange.png' %}" alt="illustrations" class="bg-shape-4">
+  <img src="{% static 'images/illustrations/dots-group-cyan.png' %}" alt="illustrations" class="bg-shape-5">
+  <img src="{% static 'images/illustrations/leaf-cyan-lg.png' %}" alt="illustrations" class="bg-shape-6">
+</section>
+
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          I am a hardworking and ambitious individual with a great passion for the software developer and application designing.<br> 
+          I am currently in my final year of studying B.E in the stream of computer science and engineering at Dhanalakshmi college of engineering, Manimangalam.<br>
+           I have excellent communication skills, enabling me to effectively communicate with a wide range of people.<br>
+           I am seeing a part-time position in the industry in which I can put into practice my knowledge and experience,<br> ultimately benefiting the operations of the organisation that I work for.
+          I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases.<br>
+           I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. 
+           I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.<br>
+           I am able to handle multiple tasks on a daily basis.I use a creative approach to problem solving.
+        </p>
+      </div>
+      <div class="col-md-4 text-center drag-lg-top">
+        <div class="shadow-down mb-4">
+          <img src="{% static 'images/about/WhatsApp Image 2023-07-30 at 13.50.45.jpg' %}" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
+        </div>
+        <img src="{% static 'images/about/signature1.jpg' %}" alt="signature" class="img-fluid">
+        <h4>NARASIMHA NAIDU</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Work Process</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <div class="">
+          <img src="{% static 'images/icons/plan.png' %}" class="mb-4" alt="icon">
+          <h4 class="mb-4">Research and Plan</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="{% static 'images/icons/design.png' %}" class="mb-4" alt="icon">
+        <h4 class="mb-4">Design and Develop</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="{% static 'images/icons/print.png'%}" class="mb-4" alt="icon">
+        <h4 class="mb-4">Deliver</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-cover" data-background="images/backgrounds/team-bg.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">My Team</h2>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+        <div class="card text-center">
+          <img src="{% static 'images/about/pic.jpeg' %}" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">lokesh</h4>
+            <p class="text-light font-secondary">Project Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 mb-4 mb-md-0">
+        <div class="card text-center">
+          <img src="{% static 'images/about/pic1.jpeg' %}" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">vishnu</h4>
+            <p class="text-light font-secondary">Project Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+        <div class="card text-center">
+          <img src="{% static 'images/about/dhoni.jpg' %}" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">chaithu</h4>
+            <p class="text-light font-secondary">Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">My Clients</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="client-logo-slider d-flex align-items-center">
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-1.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-2.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-3.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-4.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-5.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-1.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-2.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-3.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-4.png' %}" alt="client-logo"></a>
+          <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{%  static 'images/clients-logo/client-logo-5.png' %}" alt="client-logo"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4" required>
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here" required></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright &copy;<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> Designed &amp; Developed by <a class="text-white-50" href="{% static 'Themefisher' %}">Themefisher</a></p>
+  </div>
+</footer>
+
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

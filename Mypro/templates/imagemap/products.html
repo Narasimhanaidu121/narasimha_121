@@ -1,0 +1,23 @@
+{% extends 'base.html' %}     
+
+{% block content %}  
+
+
+        {% for img_obj in all_products %}
+                {% if img_obj %}  
+                    <h3>Name : {{img_obj.name}}</h3>  
+                    <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:100px">
+                    <h3>Dscription : {{img_obj.description}}</h3>
+                    <h3>Order status : {{img_obj.order_status}}</h3>
+                    <h3>Price : {{img_obj.price}}</h3>
+                    <h3>Quantity : {{img_obj.items}}</h3>
+                    
+                    <a href = "order/{{ img_obj.id }}"  button class="button button1">Order</button><br><br>
+                    <a href = "kart"  button class="button button1">Kart</button>
+                    
+                        <hr>
+                {% endif %}  
+
+        {% endfor %}
+
+{% endblock content %}   

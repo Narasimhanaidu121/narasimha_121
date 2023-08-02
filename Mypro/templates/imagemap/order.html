@@ -1,0 +1,29 @@
+{% extends 'base.html' %}     
+
+{% block content %}  
+
+
+                {% if data %}  
+                    <h3>Name : {{data.name}}</h3>  
+                    <img src="{{ data.image.url}}" alt="connect" style="max-height:100px">
+                    <h3>Dscription : {{data.description}}</h3>
+                    <h3>Order status : {{data.order_status}}</h3>
+                    <h3>Price : {{data.price}}</h3>
+                    <h3>Quantity : {{data.items}}</h3>
+                        <hr>
+                {% endif %}  
+                <form method="POST">
+                    {% csrf_token %}
+                    
+                    <div>
+                        <h1>Enter the number of items for order.</h1>
+                       <h3>Quantity:{{ form.items}} </h3> 
+                      <h3> Order status:  {{form.order_status}} </h3>
+                    </div>
+                
+                        <input type="submit" value="Yes, Update" />
+                        <a href="/">Cancel </a>
+                    </form>
+                    
+        
+{% endblock content %}   
